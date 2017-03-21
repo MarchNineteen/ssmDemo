@@ -1,6 +1,7 @@
 package com.wyb.core.Service.Impl;
 
 import com.wyb.core.Service.UserService;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**

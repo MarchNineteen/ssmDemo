@@ -10,6 +10,7 @@
     <!--是对包进行扫描，实现注释驱动Bean定义，同时将bean自动注入容器中使用。即解决了@Controller标识的类的bean的注入和使用。-->
     <context:annotation-config/>
     <context:component-scan base-package="com.wyb.web.Controller"/>
+    <context:component-scan base-package="com.wyb.core.Service"/>
     <!--<context:component-scan base-package="com.wyb.core"/>-->
 
 
