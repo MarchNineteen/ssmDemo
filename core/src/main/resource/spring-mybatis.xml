@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/c"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
     <!-- 加载配置文件 -->
-    <context:property-placeholder location="classpath:config/config_db.properties"  ignore-unresolvable="true" />
+    <context:property-placeholder location="classpath*:config/config_db.properties"  ignore-unresolvable="true" />
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close" >
         <property name="url" value="${jdbc_url}" />
@@ -46,7 +46,7 @@
         <property name="filters" value="mergeStat" />
     </bean>
 
-    <!-- myBatis文件 -->
+    <!-- mybatis文件配置，扫描所有mapper文件 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
@@ -54,6 +54,7 @@
         <property name="mapperLocations" value="classpath*:com.wyb.core.Dao.Xml.*.xml" />
     </bean>
 
+    <!-- spring与mybatis整合配置，扫描所有dao -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.wyb.core.Dao.Mapper" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
