@@ -7,6 +7,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.annotation.Resource;
@@ -25,17 +26,18 @@ public class TestController {
     private TestService A; //测试多个接口实现
     private TestAServiceImpl B = new TestAServiceImpl();//直接类实现
     private TestService C = new TestAServiceImpl();//接口回调
+    //三个都可以
 
     @RequestMapping("dependenceTest")
     public String test() {
-        System.out.printf("1111111111111111111111111111111111111111 ");
+        System.out.println("1111111111111111111111111111111111111111");
         A.buildString();
         System.out.printf("1111111111111111111111111111111111111111");
         B.buildString();
         System.out.printf("1111111111111111111111111111111111111111");
         C.buildString();
         System.out.printf("1");
-        return "400.jsp";
+        return "";
     }
 
 
@@ -62,5 +64,7 @@ public class TestController {
         ac2.getBean("beanId");
     }
 
-
+    @ResponseBody
+    public void reflection(){
+    }
 }

@@ -15,19 +15,16 @@
         <property name="url" value="${jdbc_url}" />
         <property name="username" value="${jdbc_username}" />
         <property name="password" value="${jdbc_password}" />
-
         <!-- 初始化连接大小 -->
         <property name="initialSize" value="0" />
         <!-- 连接池最大使用连接数量 -->
         <property name="maxActive" value="20" />
-
         <!-- 连接池最小空闲 -->
         <property name="minIdle" value="0" />
         <!-- 获取连接最大等待时间 -->
         <property name="maxWait" value="60000" />
         <property name="poolPreparedStatements" value="true" />
-        <property name="maxPoolPreparedStatementPerConnectionSize"
-                  value="33" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="33" />
         <!-- 用来检测有效sql -->
         <property name="validationQuery" value="${validationQuery}" />
         <property name="testOnBorrow" value="false" />
@@ -51,8 +48,8 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <!--<property name="configLocation" value="classpath:sqlMapConfig.xml"></property>-->
-        <property name="mapperLocations" value="classpath*:com.wyb.core.Dao.Xml.*.xml" />
+        <property name="configLocation" value="classpath:sqlMapConfig.xml"></property>
+        <property name="mapperLocations" value="classpath*:com/wyb/core/Dao/Xml/*.xml" />
     </bean>
 
     <!-- spring与mybatis整合配置，扫描所有dao -->
