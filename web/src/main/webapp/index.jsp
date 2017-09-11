@@ -17,6 +17,7 @@
     <a href="http://localhost:9998/downloadBySpringMvc">MVC文件下载</a>
     <a href="http://localhost:9998/download">普通流文件下载</a>
     <a href="topage.html?pagename=login">验证码</a>
+    <a href="http://localhost:9998/druid/">验证码</a>
 
 </div>
 

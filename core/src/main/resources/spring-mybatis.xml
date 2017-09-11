@@ -71,4 +71,11 @@
         </property>
     </bean>
 
+    <!--SqlMapClientTemplate使用-->
+    <bean id="SqlMapClientFactoryBean" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocation"
+                  value="classpath:sqlMapConfig.xml" /><!--这里是ibatis的sqlMap文件集合 -->
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
 </beans>

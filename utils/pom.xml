@@ -139,11 +139,11 @@
         <!--二维码-->
 
         <!--淘宝开发包-->
-        <dependency>
-            <groupId>fakepath</groupId>
-            <artifactId>taobao-sdk-java</artifactId>
-            <version>20160607</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>fakepath</groupId>-->
+            <!--<artifactId>taobao-sdk-java</artifactId>-->
+            <!--<version>20160607</version>-->
+        <!--</dependency>-->
 
     </dependencies>
 </project>
