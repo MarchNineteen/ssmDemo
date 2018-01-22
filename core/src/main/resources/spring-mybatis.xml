@@ -49,12 +49,12 @@
         <property name="dataSource" ref="dataSource" />
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
         <property name="configLocation" value="classpath:sqlMapConfig.xml"></property>
-        <property name="mapperLocations" value="classpath*:com/wyb/core/Dao/Xml/*.xml" />
+        <property name="mapperLocations" value="classpath*:com/wyb/core/dao/xml/*.xml" />
     </bean>
 
     <!-- spring与mybatis整合配置，扫描所有dao -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.wyb.core.Dao.Mapper" />
+        <property name="basePackage" value="com.wyb.core.dao.mapper" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 
@@ -66,7 +66,7 @@
           scope="prototype">
         <property name="patterns">
             <list>
-                <value>com.wyb.core.Service.*</value>
+                <value>com.wyb.core.service.*</value>
             </list>
         </property>
     </bean>

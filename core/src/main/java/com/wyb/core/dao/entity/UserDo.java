@@ -1,4 +1,4 @@
-package com.wyb.core.Dao.Do;
+package com.wyb.core.dao.entity;
 
 import java.io.Serializable;
 import java.util.Date;

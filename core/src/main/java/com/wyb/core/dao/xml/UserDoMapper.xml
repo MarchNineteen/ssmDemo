@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.wyb.core.Dao.Mapper.UserDoMapper" >
-  <resultMap id="BaseResultMap" type="com.wyb.core.Dao.Do.UserDo" >
+<mapper namespace="com.wyb.core.dao.mapper.UserDoMapper" >
+  <resultMap id="BaseResultMap" type="com.wyb.core.dao.entity.UserDo" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="username" property="username" jdbcType="VARCHAR" />
     <result column="pwd" property="pwd" jdbcType="VARCHAR" />
@@ -33,7 +33,7 @@
     delete from znsb_wzz.c_user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.wyb.core.Dao.Do.UserDo" >
+  <insert id="insert" parameterType="com.wyb.core.dao.entity.UserDo" >
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -50,7 +50,7 @@
       #{addTime,jdbcType=TIMESTAMP}, #{updTime,jdbcType=TIMESTAMP}, #{logTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.wyb.core.Dao.Do.UserDo" >
+  <insert id="insertSelective" parameterType="com.wyb.core.dao.entity.UserDo" >
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -150,7 +150,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.wyb.core.Dao.Do.UserDo" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.wyb.core.dao.entity.UserDo" >
     update znsb_wzz.c_user
     <set >
       <if test="username != null" >
@@ -201,7 +201,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.wyb.core.Dao.Do.UserDo" >
+  <update id="updateByPrimaryKey" parameterType="com.wyb.core.dao.entity.UserDo" >
     update znsb_wzz.c_user
     set username = #{username,jdbcType=VARCHAR},
       pwd = #{pwd,jdbcType=VARCHAR},

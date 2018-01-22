@@ -1,7 +1,7 @@
-package com.wyb.web.Controller;
+package com.wyb.web.controller;
 
-import com.wyb.core.Service.Impl.TestAServiceImpl;
-import com.wyb.core.Service.TestService;
+import com.wyb.core.service.impl.TestAServiceImpl;
+import com.wyb.core.service.TestService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.stereotype.Controller;

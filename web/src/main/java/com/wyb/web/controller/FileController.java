@@ -1,6 +1,6 @@
-package com.wyb.web.Controller;
+package com.wyb.web.controller;
 
-import com.wyb.core.Constant.ConfigConstants;
+import com.wyb.core.constant.ConfigConstants;
 import com.wyb.utils.util.FileUtilTest;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;

@@ -1,4 +1,4 @@
-package com.wyb.web.Config;//package com.wyb.web.Config;
+package com.wyb.web.config;//package com.wyb.web.config;
 //
 //import org.springframework.web.servlet.view.freemarker.FreeMarkerView;
 //

@@ -1,4 +1,4 @@
-package com.wyb.web.Config;
+package com.wyb.web.config;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.web.context.ServletContextAware;

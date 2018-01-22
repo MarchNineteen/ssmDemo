@@ -51,7 +51,7 @@
 
     <mvc:interceptors>
         <!-- 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 -->
-        <bean class="com.wyb.web.Interceptor.LoginInterceptor"></bean>
+        <bean class="com.wyb.web.interceptor.LoginInterceptor"></bean>
     </mvc:interceptors>
 
 

@@ -1,9 +1,9 @@
-package com.wyb.core.Constant;
+package com.wyb.core.constant;
 
 import com.alibaba.fastjson.JSONObject;
-import org.apache.commons.beanutils.BeanUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;

@@ -1,6 +1,6 @@
-package com.wyb.core.Dao.Mapper;
+package com.wyb.core.dao.mapper;
 
-import com.wyb.core.Dao.Do.UserDo;
+import com.wyb.core.dao.entity.UserDo;
 
 public interface UserDoMapper {
     int deleteByPrimaryKey(Integer id);

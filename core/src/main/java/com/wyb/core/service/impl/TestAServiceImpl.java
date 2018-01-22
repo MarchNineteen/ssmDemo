@@ -1,6 +1,6 @@
-package com.wyb.core.Service.Impl;
+package com.wyb.core.service.impl;
 
-import com.wyb.core.Service.TestService;
+import com.wyb.core.service.TestService;
 import org.springframework.stereotype.Service;
 
 /**

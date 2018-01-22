@@ -26,6 +26,6 @@
 
 
     <!--自定义初始化类-->
-    <bean class="com.wyb.web.Config.Init"></bean>
+    <bean class="com.wyb.web.config.Init"></bean>
 
 </beans>
