@@ -296,48 +296,48 @@
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
-        <repository>
-            <id>content</id>
-            <name>Nexus Repository</name>
-            <!--<url>http://182.254.231.62:8081/nexus/content/groups/public/</url>-->
-            <url>http://123.206.88.40:8081/repository/maven-public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>content</id>-->
+            <!--<name>Nexus Repository</name>-->
+            <!--&lt;!&ndash;<url>http://182.254.231.62:8081/nexus/content/groups/public/</url>&ndash;&gt;-->
+            <!--<url>http://123.206.88.40:8081/repository/maven-public/</url>-->
+            <!--<releases>-->
+                <!--<enabled>true</enabled>-->
+            <!--</releases>-->
+            <!--<snapshots>-->
+                <!--<enabled>true</enabled>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
+    <!--</repositories>-->
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>user-snapshots</id>
-            <name>USER-SNAPSHOTS</name>
-            <!--<url>http://182.254.231.62:8081/nexus/content/repositories/snapshots/</url>-->
-            <url>http://123.206.88.40:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>user-releases</id>
-            <name>USER-RELEASES</name>
-            <!--<url>http://182.254.231.62:8081/nexus/content/repositories/releases/</url>-->
-            <url>http://123.206.88.40:8081/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
+    <!--<distributionManagement>-->
+        <!--<snapshotRepository>-->
+            <!--<id>user-snapshots</id>-->
+            <!--<name>USER-SNAPSHOTS</name>-->
+            <!--&lt;!&ndash;<url>http://182.254.231.62:8081/nexus/content/repositories/snapshots/</url>&ndash;&gt;-->
+            <!--<url>http://123.206.88.40:8081/repository/maven-snapshots/</url>-->
+        <!--</snapshotRepository>-->
+        <!--<repository>-->
+            <!--<id>user-releases</id>-->
+            <!--<name>USER-RELEASES</name>-->
+            <!--&lt;!&ndash;<url>http://182.254.231.62:8081/nexus/content/repositories/releases/</url>&ndash;&gt;-->
+            <!--<url>http://123.206.88.40:8081/repository/maven-releases/</url>-->
+        <!--</repository>-->
+    <!--</distributionManagement>-->
 
 
-    <!--<profiles>-->
-        <!--<profile>-->
-            <!--<id>dev</id>-->
-             <!--<activation>-->
-                <!--<activeByDefault>true</activeByDefault>-->
-            <!--</activation>-->
-            <!--<properties>-->
-                <!--<configx.path>../configx.properties</configx.path>-->
-            <!--</properties>-->
-        <!--</profile>-->
-    <!--</profiles>-->
+    <profiles>
+        <profile>
+            <id>dev</id>
+             <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <configx.path>../configx.properties</configx.path>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <finalName>summary</finalName>
