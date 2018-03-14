@@ -8,6 +8,9 @@ import java.io.*;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * @author wyb
+ */
 public class FileUtil {
 
 

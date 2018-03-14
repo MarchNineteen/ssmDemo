@@ -6,7 +6,9 @@ import com.github.pagehelper.Page;
 import java.util.List;
 
 /**
- * Created by chang on 2016/10/14.
+ *
+ * @author chang
+ * @date 2016/10/14
  */
 @SuppressWarnings("unchecked")
 public class PageUtil<T> {

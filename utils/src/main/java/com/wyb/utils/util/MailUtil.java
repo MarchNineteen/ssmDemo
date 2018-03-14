@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 
 /**
  * 发送电子邮件
+ * @author Kunzite
  */
 public class MailUtil {
 

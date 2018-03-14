@@ -18,6 +18,7 @@ import java.util.Properties;
  *  从配置文件中读取 信息
  *  在调用时初始化 初始化之后一直存在内存中
  *  修改后需要重启tomcat
+ * @author Kunzite
  */
 public class ConfigConstants {
 

@@ -19,7 +19,9 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
- * Created by wyb on 2017/3/28.
+ *
+ * @author wyb
+ * @date 2017/3/28
  * 文件上传 相关方法
  */
 @Controller

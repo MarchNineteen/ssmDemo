@@ -5,10 +5,11 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.logging.Handler;
 
 /**
- * Created by WYB on 2017/4/11.
+ *
+ * @author Kunzite
+ * @date 2017/4/11
  * 拦截器
  */
 public class LoginInterceptor extends HandlerInterceptorAdapter {

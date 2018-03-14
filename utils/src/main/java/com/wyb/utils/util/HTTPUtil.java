@@ -28,6 +28,7 @@ import java.util.Map;
 
 /**
  * 
+ * @author Kunzite
  * @ClassName: RequestUtils
  * @Description: 请求工具类
  *

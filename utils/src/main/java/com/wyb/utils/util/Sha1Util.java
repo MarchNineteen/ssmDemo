@@ -6,6 +6,7 @@ import java.util.*;
 /**
  * createSHA1Sign创建签名SHA1
  * getSha1()Sha1签名
+ * @author Kunzite
  */
 public class Sha1Util {
 

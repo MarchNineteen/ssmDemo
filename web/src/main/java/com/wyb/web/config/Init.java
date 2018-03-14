@@ -1,4 +1,4 @@
-package com.wyb.web.config;
+package com.wyb.web.Config;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.web.context.ServletContextAware;
@@ -6,7 +6,9 @@ import org.springframework.web.context.ServletContextAware;
 import javax.servlet.ServletContext;
 
 /**
- * Created by wyb on 2017/4/11.
+ *
+ * @author wyb
+ * @date 2017/4/11
  * 容易初始化要执行的类  要继承的接口
  */
 public class Init implements InitializingBean, ServletContextAware {

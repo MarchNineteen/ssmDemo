@@ -3,6 +3,10 @@ package com.wyb.core.dao.entity;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ *
+ * @author Kunzite
+ */
 public class UserDo implements Serializable {
     private Integer id;
 

@@ -17,7 +17,9 @@ import org.apache.log4j.Logger;
 import java.io.IOException;
 
 /**
- * Created by WYB on 2016/7/8. 短信接口
+ *
+ * @author WYB
+ * @date 2016/7/8
  */
 public class SMSUtil {
 	protected static final Logger logger = Logger.getLogger(SMSUtil.class);

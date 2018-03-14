@@ -14,7 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by FirenzesEagle on 2016/7/7 0007.
+ *
+ * @author FirenzesEagle
+ * @date 2016/7/7 0007
  * Email:liumingbo2008@gmail.com
  */
 public class XMLUtil {
