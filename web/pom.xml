@@ -10,7 +10,7 @@
     <groupId>com.wyb.summary</groupId>
     <artifactId>web</artifactId>
     <packaging>war</packaging>
-    <name>ssmDemo</name>
+    <name>web</name>
     <url>http://maven.apache.org</url>
     <dependencies>
 
