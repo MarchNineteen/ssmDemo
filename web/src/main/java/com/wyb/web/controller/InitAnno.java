@@ -1,9 +1,11 @@
 package com.wyb.web.controller;
 
+import com.wyb.web.config.Init;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.ServletContextAware;
 
+import javax.annotation.Resource;
 import javax.servlet.ServletContext;
 
 /**
@@ -11,9 +13,14 @@ import javax.servlet.ServletContext;
  */
 @Component
 public class InitAnno implements InitializingBean, ServletContextAware {
+
+    @Resource
+    Init init;
+
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("InitAnno");
+        System.out.println(init.toString());
+        System.out.println("InitAnno  init");
     }
 
     @Override
