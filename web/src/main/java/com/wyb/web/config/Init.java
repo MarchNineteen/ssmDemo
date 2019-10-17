@@ -1,4 +1,4 @@
-package com.wyb.web.Config;
+package com.wyb.web.config;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.web.context.ServletContextAware;
@@ -14,7 +14,7 @@ import javax.servlet.ServletContext;
 public class Init implements InitializingBean, ServletContextAware {
     @Override
     public void afterPropertiesSet() throws Exception {
-
+        System.out.println("InitializingBean");
     }
     /**
      * servlet 容器初始化
