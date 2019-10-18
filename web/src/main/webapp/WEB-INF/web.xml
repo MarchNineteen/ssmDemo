@@ -47,10 +47,19 @@
     <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
   </listener>
 
+  <!--多个listener 顺序由这里决定 tomcat中-->
   <!--自定义listen-->
   <listener>
     <listener-class>com.wyb.web.listener.CustomListener</listener-class>
   </listener>
+
+  <!--自定义listen2-->
+  <listener>
+    <listener-class>com.wyb.web.listener.CustomListener2</listener-class>
+  </listener>
+
+
+
 
   <!--自定义filter-->
   <filter>
