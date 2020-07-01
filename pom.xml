@@ -20,7 +20,7 @@
         <mybatisSpring-version>1.2.4</mybatisSpring-version>
         <servletApi-version>3.1.0</servletApi-version>
         <druid-version>1.0.15</druid-version>
-        <mysqlConnector-version>5.1.38</mysqlConnector-version>
+        <mysqlConnector-version>8.0.16</mysqlConnector-version>
         <commonsLang3-version>3.4</commonsLang3-version>
         <dom-version>1.6.1</dom-version>
         <freemarker-version>2.3.23</freemarker-version>
